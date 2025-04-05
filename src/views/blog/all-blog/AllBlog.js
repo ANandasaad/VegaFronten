@@ -48,15 +48,9 @@ const AllBlog = () => {
         theme: 'colored',
       })
 
-      queryClient.invalidateQueries(['blog'])
-
-      // Explicitly refetch the current page data
-      queryClient.refetchQueries([
-        'blog',
-        pagination.pageIndex,
-        pagination.pageSize,
-        debouncedSearchKeyword,
-      ])
+      queryClient.invalidateQueries({
+        queryKey: ['blog', pagination.pageIndex, pagination.pageSize, debouncedSearchKeyword],
+      })
     },
     onError: (error) => {
       console.log(error)

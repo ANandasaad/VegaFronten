@@ -1,0 +1,42 @@
+.custom-table thead {
+    background-color: #343a40; /* Dark header background */
+    color: white; /* White text color */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+
+  }
+  
+  .custom-table thead th {
+    padding: 12px;
+    border-bottom: 2px solid #ffffff; /* White border bottom */
+    text-align: center;
+    background-color: #053C5E;
+    color: #ffffff;
+
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #f8f9fa; /* Light gray hover effect */
+  }
+  
+  .custom-table td {
+    text-align: center;
+  }
+  
+  .container {
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 14px;
+  }
+  .table-header h2 {
+    font-size: 24px;
+  font-weight: 600;
+  
+  color: #053C5E;
+  text-transform: uppercase;
+
+  }
+
